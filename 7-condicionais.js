@@ -22,13 +22,9 @@ if (idadeComprador >= 18) {
 }
 */
 
-if (idadeComprador >= 18) {
+if (idadeComprador >= 18 || estaAcompanhado ==  true) {
     console.log("Comprador maior de idade.");
     listaDeDestinos.splice(1,1);
-    } else if (estaAcompanhado ==  true){
-        // A pessoa é menor de idade.
-        listaDeDestinos.splice(1,1);
-        console.log("Não é maior de idade, mas esta acompanhada.");
     } else {
         console.log("Não é maior de idade e não posso vender.");
 }
